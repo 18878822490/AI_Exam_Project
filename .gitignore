@@ -1,0 +1,51 @@
+# ========== 系统临时文件 ==========
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*~
+
+# ========== IDE 缓存配置 ==========
+# IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+# VSCode
+.vscode/
+# Qt Creator
+*.pro.user*
+CMakeLists.txt.user*
+cmake-build-*/
+.qmake.cache
+.qmake.stash
+
+# ========== SpringBoot Java 后端 ==========
+backend/target/
+*.class
+*.jar
+*.war
+hs_err_pid*
+backend/*.log
+
+# ========== Qt 编译产物（重点，不要提交exe） ==========
+qt-client/*.exe
+qt-client/*.dll
+qt-client/*.o
+qt-client/*.obj
+qt-client/*.moc
+qt-client/ui_*.h
+qt-client/moc_*.cpp
+qt-client/qrc_*.cpp
+qt-client/Makefile*
+qt-client/*.prl
+qt-client/build-*/
+
+# ========== 日志、缓存 ==========
+*.log
+logs/
+cache/
+
+# ========== 数据库本地配置（可选，防止泄露账号） ==========
+*.env
+application-local.yml
